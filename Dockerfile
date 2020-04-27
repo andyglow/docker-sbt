@@ -1,3 +1,6 @@
+# BORROWED FROM
+# https://github.com/eed3si9n/docker-sbt/blob/master/jdk11/alpine/Dockerfile
+
 FROM adoptopenjdk/openjdk11:alpine-slim
 
 LABEL maintainer="andyglow@gmail.com"
