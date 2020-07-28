@@ -7,7 +7,7 @@ LABEL maintainer="andyglow@gmail.com"
 
 RUN set -x \
   && SBT_VER="1.3.13" \
-  && ESUM="3060065764193651aa3fe860a17ff8ea9afc1e90a3f9570f0584f2d516c34380" \
+  && ESUM="854154de27a7d8c13b5a0f9a297cd1f254cc13b44588dae507e5d4fb2741bd22" \
   && SBT_URL="https://piccolo.link/sbt-${SBT_VER}.tgz" \
   && apk add curl \
   && apk add shadow \
