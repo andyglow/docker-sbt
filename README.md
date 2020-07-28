@@ -9,3 +9,7 @@ Changes:
 - [x] base image `adoptopenjdk/openjdk11:alpine-slim`
 - [x] sbt 1.3.10
 - [x] `curl` package added constantly. (used by [Codecov Bash Uploader](https://github.com/codecov/codecov-bash))
+
+Changelog:
+- July 28, 2020
+    - [x] sbt 1.3.13
