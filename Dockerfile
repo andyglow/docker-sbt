@@ -6,9 +6,9 @@ FROM adoptopenjdk/openjdk11:alpine-slim
 LABEL maintainer="andyglow@gmail.com"
 
 RUN set -x \
-  && SBT_VER="1.3.13" \
-  && ESUM="854154de27a7d8c13b5a0f9a297cd1f254cc13b44588dae507e5d4fb2741bd22" \
-  && SBT_URL="https://piccolo.link/sbt-${SBT_VER}.tgz" \
+  && SBT_VER="1.4.4" \
+  && ESUM="2efae0876119af7bfce8b3621b43b08c51381352916ac9de6156b1251ec26d45" \
+  && SBT_URL="https://github.com/sbt/sbt/releases/download/v${SBT_VER}/sbt-${SBT_VER}.tgz" \
   && apk add curl \
   && apk add shadow \
   && apk add bash \
@@ -32,9 +32,9 @@ ENV PATH="/opt/sbt/sbt/bin:$PATH" \
     SBT_OPTS="-Xmx2048M -Xss2M"
 
 RUN set -x \
-  && echo "ThisBuild / scalaVersion := \"2.13.2\"" >> build.sbt \
+  && echo "ThisBuild / scalaVersion := \"2.13.4\"" >> build.sbt \
   && mkdir -p project \
-  && echo "sbt.version=1.3.13" >> project/build.properties \
+  && echo "sbt.version=1.4.4" >> project/build.properties \
   && echo "object Test" >> Test.scala \
   && sbt compile \
   && sbt compile \
