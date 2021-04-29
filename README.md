@@ -17,3 +17,5 @@ Changelog:
     - [x] sbt 1.4.4    
 - Apr 14, 2021
     - [x] sbt 1.5.0
+- Apr 29, 2021
+    - [x] sbt 1.5.1	
